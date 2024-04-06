@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=Edge">
+    <meta name="width=width-device initial scale = 1.0">
+    <link rel="StyleSheet" href="">
+  </head>
+  <body>
+   <h2>Functions</h2>
+   <div>
+    <form>
+      <div>
+        <label>User name</label>
+      <input type="text" id="name">
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" id="password">
+      </div>
+      <button onclick="check()">Submit</button>
+    </form>
+   </div>
+   <script>
+    function check(){
+      let name = document.getElementById('name').value;
+      let pass = document.getElementById('password').value;
+      
+      if(name.lenght<=3) {
+        alert('Congratulations!')
+      }
+     else{
+      alert('Invalid input!')
+     }
+    }
+
+   </script>
+  </body>
+</html>
